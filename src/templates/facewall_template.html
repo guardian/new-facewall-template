@@ -1,0 +1,63 @@
+<div class="facewall_block_container">
+
+	{{#if menu}}
+
+	<div class="facewall_menu">
+
+		<div class="facewall_filters">
+
+			<ul>
+
+				<li on-click="['menu', '']">Show all</li>
+
+				{{#each categories}}
+
+			  	<li style="color: {{colour}};" on-click="['menu', category]">{{category}}</li>
+
+			  	{{/each}}
+
+			</ul>
+
+		</div>
+		
+	</div>
+
+	{{/if}}
+
+	<div class="facewall">
+
+		<div  class="facewall_panel">
+
+			<div class="facewall_panel_closure">
+				
+				<div class="facewall_panel_close" on-click="['close']"></div>
+				
+			</div>
+
+			<div id="facewall_panel"></div>
+
+		</div>
+
+	{{#each facewall}}
+
+		<div class="facewall_block facewall_quads" style="order: {{order}};background-color: rgba({{rgb.r}}, {{rgb.g}}, {{rgb.b}}, 0.1);" on-click="['activate', index, category]" data-filter="{{category}}"> 
+
+			{{#if menu}}<div class="facewall_header" style="background-color: {{colour}};">{{category}}</div>{{/if}}
+
+			<div class="facewall_image" style="background-image:url({{image}})"></div>
+
+			<div class="facewall_title">
+
+				<h3 style="color: {{colour}};">{{title}}</h3>
+
+				<strong>{{subtitle}}</strong>
+
+			</div>
+
+		</div>
+
+	{{/each}}
+
+	</div>
+
+</div>
