@@ -6,6 +6,7 @@ import { $, $$, round, numberWithCommas, wait, getDimensions } from '../modules/
 import Ractive from 'ractive'
 import chroma from 'chroma-js'
 import smoothscroll from 'smoothscroll-polyfill';
+Ractive.DEBUG = false;
 
 smoothscroll.polyfill();
 
