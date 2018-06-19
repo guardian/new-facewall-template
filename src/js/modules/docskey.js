@@ -6,7 +6,15 @@ if (allAtoms.length===0) {
 	allAtoms = window.document.querySelectorAll(".interactive-atom")
 }
 
+console.log("Atoms: " + allAtoms.length)
+
 var allEmbeds = window.parent.document.querySelectorAll(".element-embed")
+
+if (allEmbeds.length===0) {
+	allEmbeds = window.document.querySelectorAll(".element-embed")
+}
+
+console.log("Embeds: " + allEmbeds.length)
 
 var allAtomKeys = []
 var thisAtom = null

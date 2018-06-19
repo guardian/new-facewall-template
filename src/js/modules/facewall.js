@@ -31,6 +31,12 @@ export class Facewall {
 
 		});
 
+		this.categorise = (this.googledoc.settings[0].categorise==='TRUE') ? true : false ;
+
+		this.topbar = (this.googledoc.settings[0].topbar==='TRUE') ? true : false ;
+
+		this.ratio = +this.googledoc.settings[0].ratio
+
 		this.colourPalette = []
 
 		this.scale = chroma.scale(self.colours)
@@ -110,7 +116,9 @@ export class Facewall {
 
 		var self = this
 
-		var menu = (self.categories.length > 1) ? true : false
+		console.log(self.categorise)
+
+		var menu = (self.categories.length > 1 && self.categorise) ? true : false
 
 		this.render = function () {
 
@@ -123,6 +131,8 @@ export class Facewall {
 				data: { 
 
 					menu: menu,
+
+					topbar: self.topbar,
 
 					categories: self.categories,
 
