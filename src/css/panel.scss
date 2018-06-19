@@ -91,6 +91,9 @@
 
 .facewall_panel_image {
 
+    display: inline-block;
+    float: right;
+
     @include mq($until: mobile) {
     	width: 100%;
     	margin-top: 10px;
@@ -117,6 +120,40 @@
     	width: 40%;
 		height: 0px;
 		padding-bottom: 24%;
+    }
+
+}
+
+.facewall_image_caption {
+
+    font-family: 'Guardian Text Sans Web', 'Agate Sans', sans-serif; 
+    clear: right;
+    float: right;
+    font-size: 0.8rem;
+
+    @include mq($until: mobile) {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    @include mq($from: mobile, $until: artie) {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    @include mq($from: artie, $until: tablet) {
+        width: 40%;
+       margin-top: 5px;
+    }
+
+    @include mq($from: tablet, $until: desktop) {
+        width: 40%;
+        margin-top: 5px;
+    }
+
+    @include mq($from: desktop) {
+        width: 40%;
+        margin-top: 5px;
     }
 
 

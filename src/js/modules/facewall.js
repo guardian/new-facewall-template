@@ -276,8 +276,9 @@ export class Facewall {
 					panel_title: self.facewall[index].panel_title,	
 					panel_subtitle: self.facewall[index].panel_subtitle,	
 					description: self.facewall[index].description,
-					rgb: self.facewall[index].rgb
-
+					rgb: self.facewall[index].rgb,
+					caption: self.facewall[index].caption
+					
 				}
 
 			});
