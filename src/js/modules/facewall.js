@@ -31,6 +31,12 @@ export class Facewall {
 
 		});
 
+		if (this.colours.length === 1) {
+
+			this.colours.push(this.colours[0])
+
+		}
+
 		this.categorise = (this.googledoc.settings[0].categorise==='TRUE') ? true : false ;
 
 		this.topbar = (this.googledoc.settings[0].topbar==='TRUE') ? true : false ;
