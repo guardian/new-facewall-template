@@ -1,15 +1,16 @@
 .read_more_block {
-	width: 40px;
-	float: right;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
 }
 
 .read_more_button {
-	width: 18px;
-	height: 18px;
-	border-radius: 16px;
-	padding: 6px;
+	box-sizing: border-box;
+	width: 22px;
+	height: 22px;
+	border-radius: 11px;
 	float: right;
-	margin-right: 8px;
+	padding: 2px;
 }
 
 .read_more_button svg {

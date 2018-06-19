@@ -82,10 +82,11 @@ iframe.fenced {
 	height: 0px;
 	float: left;
 	cursor: pointer;
+	position: relative;
 } 
 
 .facewall_title {
-	width: calc(100% - 40px);
+	width: calc(100% - 20px);
 	box-sizing: border-box;
 	padding-left: 10px;
 	padding-right: 10px;

@@ -287,7 +287,7 @@ export class Facewall {
 		this.panel();
 
 
-
+		$('.facewall_panel_close').style.backgroundColor = `rgba(${self.facewall[index].rgb.r}, ${self.facewall[index].rgb.g}, ${self.facewall[index].rgb.b}, 1)`
 
 		$('.facewall_panel').style.backgroundColor = `rgba(${self.facewall[index].rgb.r}, ${self.facewall[index].rgb.g}, ${self.facewall[index].rgb.b}, 0.1)`
 
