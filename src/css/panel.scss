@@ -48,19 +48,21 @@
 
 .facewall_panel_close {
     box-sizing: border-box;
-	width: 25px;
-	height: 25px;
+	width: 22px;
+	height: 22px;
 	float: right;
-	border-radius: 50%;
+	border-radius: 11px;
 	cursor: pointer;
-    -ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Safari */
-    transform: rotate(45deg);
-    padding: 2.5px;
+    padding-left: 2px;
+    padding-top: 1px;
 }
 
 .facewall_panel_close svg {
     fill: white;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari */
+    transform: rotate(-45deg);
+
 }
 
 .facewall_panel_editorial {
