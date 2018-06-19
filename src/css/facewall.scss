@@ -85,23 +85,27 @@ iframe.fenced {
 } 
 
 .facewall_title {
-	width: 100%;
+	width: calc(100% - 40px);
 	box-sizing: border-box;
 	padding-left: 10px;
 	padding-right: 10px;
+	float: left;
 }
-
-
 
 .facewall_title h3 {
 	font-weight: 900;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	margin: 0;
 	padding: 0;
-	line-height: 1.2rem;
+	line-height: 1rem;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+}
+
+.facewall_subtitle {
+	font-size: 14px;
+	line-height: 10px;
 }
 
 .facewall_quads {
